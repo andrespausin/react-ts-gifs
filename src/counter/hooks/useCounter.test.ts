@@ -3,6 +3,13 @@ import { useCounter } from './useCounter';
 import { act, renderHook } from '@testing-library/react';
 
 describe('useCounter', () => {
+  // let result;
+
+  // beforeEach(() => {
+  //   const { result: hookValue } = renderHook(() => useCounter());
+  //   result = hookValue;
+  // });
+
   test('should initialize with default value of 10', () => {
     const { result } = renderHook(() => useCounter());
 
